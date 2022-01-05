@@ -1,0 +1,20 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'components/button.css';
+@import 'components/search.css';
+
+
+@layer base {
+    a {
+        @apply underline;
+    }
+
+    .error {
+        @apply font-bold text-red-300;
+    }
+
+    .form-control {
+        @apply border border-gray-700 bg-white text-gray-900 appearance-none block w-full rounded-md py-3 px-4 focus:outline-none;
+    }
+}

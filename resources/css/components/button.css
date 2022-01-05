@@ -1,0 +1,36 @@
+
+@layer components {
+    .btn-brow{
+        @apply text-sm text-gray-700 hover:bg-brown hover:text-white focus:outline-none focus:bg-gray-100 no-underline
+    }
+    .btn-brow__active{
+        @apply text-sm text-white bg-brown no-underline;
+    }
+    .btn-link{
+        @apply text-sm font-bold text-white hover:text-red-300 hover:border-red-100 focus:outline-none focus:text-red-300 focus:border-red-100 no-underline;
+    }
+    .btn-link__active{
+        @apply border-b-2 border-red-100 text-sm font-bold text-red-300 focus:outline-none focus:border-red-100 no-underline;
+    }
+    
+    .btn button{
+        @apply focus:outline-none w-32 py-2 rounded-md font-semibold text-white;
+    }
+
+    .btn_indigo:hover{
+        @apply ring-4 ring-indigo-300;
+    }
+    .btn_indigo{
+        @apply  bg-indigo-500;
+    }
+
+    .btn_red:hover{
+        @apply ring-4 ring-red-300;
+    }
+    .btn_red{
+        @apply  bg-red-500;
+    }
+    .button-group {
+        @apply flex flex-row justify-around items-center;
+    }
+}
